@@ -150,3 +150,7 @@ bottom a{
     text-decoration: none;
     font-weight: bolder;
 }
+
+bottom a:hover{
+    color: var(--corDestaque2);
+}
