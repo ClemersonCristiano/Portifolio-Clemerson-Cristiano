@@ -113,7 +113,8 @@ body {
 .container>.projetos>nav>ol>li:hover a,
 .Exercicios>nav>ul>li:hover,
 .Exercicios>nav>ul>li:hover a,
-.container > .Exercicios > h1:hover a{
+.container > .Exercicios > h1:hover a,
+.Contatos>ul>li:hover a{
     color: var(--corDestaque2);
     text-decoration: underline;
 }
@@ -153,4 +154,11 @@ bottom a{
 
 bottom a:hover{
     color: var(--corDestaque2);
+}
+
+ol>li>img{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
 }
