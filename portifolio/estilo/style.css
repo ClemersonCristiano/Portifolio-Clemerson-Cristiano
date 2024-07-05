@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    min-width: 400px;
+    min-width: 380px;
     max-width: 800px;
     margin: 50px auto;
     padding: 10px;
@@ -99,7 +99,7 @@ body {
 .container>.projetos>nav>ol>li,
 .Exercicios>nav>ul>li {
     padding: 5px;
-    background: linear-gradient(to left, #ffffff, #000000);
+    background: linear-gradient(to left, #000352, #000000);
     border-radius: 10px;
     width: 95%;
 }
