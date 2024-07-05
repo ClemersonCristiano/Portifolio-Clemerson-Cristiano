@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --corDestaque1: #162964;
+    --corDestaque2: #1fcf00;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, #091028, #000000);
+    color: white;
+    line-height: 25px;
+}
+
+.container {
+    width: 450px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.container-ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+}
+
+.container>.container-ft>.moldura1,
+.container>.container-ft>.moldura2,
+.container>.container-ft>.Foto_Perfil {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 100%;
+    border: 3px solid transparent;
+}
+
+.container>.container-ft>.moldura1 {
+    animation: rotate 20s infinite linear;
+    border-top-color: var(--corDestaque1);
+    border-bottom-color: var(--corDestaque1);
+}
+
+.container>.container-ft>.moldura2 {
+    animation: rotate 20s infinite linear reverse;
+    border-right-color: var(--corDestaque2);
+    border-left-color: var(--corDestaque2);
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.container>.infos {
+    text-transform: uppercase;
+    padding: 10px 0px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.container>.infos>h1 {
+    font-size: 36px;
+}
+
+.container>.infos>p {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.container>.infos>.Descrição {
+    padding: 15px 0px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.container>.projetos>ol {
+    list-style: inside;
+    list-style-type: decimal;
+    padding: 10px 0px;
+}
+
+.container>.projetos>ol>li {
+    padding: 5px;
+    background: linear-gradient(to left, #091028, #000000);
+    border-radius: 10px;
+}
+
+.container>.projetos>ol>li:hover{
+    transform: scale(1.05);
+}
+
+.container>.projetos>ol>li:hover, .container>.projetos>ol>li:hover a
+{
+    color: var(--corDestaque2);
+}
+
+.container>.projetos>ol>li>a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+mark {
+    background-color: transparent;
+    color: var(--corDestaque2);
+}
