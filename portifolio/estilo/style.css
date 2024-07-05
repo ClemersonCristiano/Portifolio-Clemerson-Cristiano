@@ -133,3 +133,20 @@ mark {
 .container>.Exercicios>h1 {
     font-size: 25px;
 }
+
+bottom{
+    display: block;
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(to left, #202021, #000000);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+bottom a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
