@@ -5,20 +5,21 @@
     padding: 0px;
 }
 
-:root{
+:root {
     --corDestaque1: #162964;
     --corDestaque2: #1fcf00;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to top, #091028, #000000);
+    background: linear-gradient(to left, #091028, #000000);
     color: white;
-    line-height: 25px;
+    line-height: 1.9em;
 }
 
 .container {
-    width: 450px;
+    min-width: 450px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 10px;
     border-radius: 30px;
@@ -88,28 +89,36 @@ body {
     text-align: left;
 }
 
-.container>.projetos>ol {
+.container>.projetos>nav>ol,
+.Exercicios>nav>ul {
     list-style: inside;
-    list-style-type: decimal;
+    list-style-type: circle;
     padding: 10px 0px;
 }
 
-.container>.projetos>ol>li {
+.container>.projetos>nav>ol>li,
+.Exercicios>nav>ul>li {
     padding: 5px;
-    background: linear-gradient(to left, #091028, #000000);
+    background: linear-gradient(to left, #121f46, #000000);
     border-radius: 10px;
 }
 
-.container>.projetos>ol>li:hover{
-    transform: scale(1.05);
+.container>.projetos>nav>ol>li:hover,
+.Exercicios>nav>ul>li:hover {
+    transform: scale(1.02);
 }
 
-.container>.projetos>ol>li:hover, .container>.projetos>ol>li:hover a
-{
+.container>.projetos>nav>ol>li:hover,
+.container>.projetos>nav>ol>li:hover a,
+.Exercicios>nav>ul>li:hover,
+.Exercicios>nav>ul>li:hover a,
+.container > .Exercicios > h1:hover a{
     color: var(--corDestaque2);
+    text-decoration: underline;
 }
 
-.container>.projetos>ol>li>a {
+.container>.projetos>nav>ol>li>a,
+.Exercicios>nav>ul>li>a, .container > .Exercicios > h1 > a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -118,4 +127,8 @@ body {
 mark {
     background-color: transparent;
     color: var(--corDestaque2);
+}
+
+.container>.Exercicios>h1 {
+    font-size: 25px;
 }
