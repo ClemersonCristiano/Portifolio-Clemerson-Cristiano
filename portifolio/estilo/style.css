@@ -3,26 +3,30 @@
 * {
     margin: 0px;
     padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
+    --corBase: #091028;
     --corDestaque1: #162964;
-    --corDestaque2: #1fcf00;
+    --corDestaque2: #00ff1a;
+    --corDestaque3: #000;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to left, #091028, #000000);
-    color: white;
-    line-height: 1.9em;
+    background: linear-gradient(to top, var(--corBase), var(--corDestaque3));
 }
 
 .container {
-    min-width: 380px;
-    max-width: 800px;
+    width: 80vw;
     margin: 50px auto;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 30px;
+}
+
+p{
+    line-height: 1.5em;
 }
 
 .container-ft {
@@ -89,70 +93,33 @@ body {
     text-align: left;
 }
 
-.container>.projetos>nav>ol,
-.Exercicios>nav>ul {
-    list-style: inside;
-    list-style-type: circle;
-    padding: 10px 0px;
+.container > .projetos > nav > ul{
+    list-style: none;
+    margin: auto;
 }
 
-.container>.projetos>nav>ol>li,
-.Exercicios>nav>ul>li {
+.container > .projetos > nav > ul > li > img{
+    display: block;
+    float: left;
+    width: 40px;
     padding: 5px;
-    background: linear-gradient(to left, #000352, #000000);
-    border-radius: 10px;
-    width: 95%;
 }
 
-.container>.projetos>nav>ol>li:hover,
-.Exercicios>nav>ul>li:hover {
-    transform: scale(1.02);
-}
-
-.container>.projetos>nav>ol>li:hover,
-.container>.projetos>nav>ol>li:hover a,
-.Exercicios>nav>ul>li:hover,
-.Exercicios>nav>ul>li:hover a,
-.container > .Exercicios > h1:hover a,
-.Contatos>ul>li:hover a{
-    color: var(--corDestaque2);
-    text-decoration: underline;
-}
-
-.container>.projetos>nav>ol>li>a,
-.Exercicios>nav>ul>li>a, .container > .Exercicios > h1 > a {
-    color: white;
+.container > .projetos > nav > ul > li > a{
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
     text-decoration: none;
-    text-transform: uppercase;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.container > .projetos > nav > ul > li > a:hover{
+    background-color: var(--corDestaque3);
 }
 
 mark {
     background-color: transparent;
-    color: var(--corDestaque2);
-}
-
-.container>.Exercicios>h1 {
-    font-size: 25px;
-}
-
-bottom{
-    display: block;
-    width: 200px;
-    height: 30px;
-    background: linear-gradient(to left, #202021, #000000);
-    padding: 10px;
-    border-radius: 20px;
-    text-align: center;
-    margin: auto;
-}
-
-bottom a{
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-bottom a:hover{
     color: var(--corDestaque2);
 }
 
