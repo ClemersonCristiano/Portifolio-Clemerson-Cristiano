@@ -18,8 +18,7 @@ body {
     background: linear-gradient(to top, var(--corBase), var(--corDestaque3));
 }
 
-.container {
-    width: 80vw;
+.container-ALL {
     margin: 50px auto;
     padding: 10px 20px;
     border-radius: 30px;
@@ -39,9 +38,9 @@ p{
     margin: auto;
 }
 
-.container>.container-ft>.moldura1,
-.container>.container-ft>.moldura2,
-.container>.container-ft>.Foto_Perfil {
+.container-ALL>.container-ft>.moldura1,
+.container-ALL>.container-ft>.moldura2,
+.container-ALL>.container-ft>.Foto_Perfil {
     width: 180px;
     height: 180px;
     position: absolute;
@@ -49,13 +48,13 @@ p{
     border: 3px solid transparent;
 }
 
-.container>.container-ft>.moldura1 {
+.container-ALL>.container-ft>.moldura1 {
     animation: rotate 20s infinite linear;
     border-top-color: var(--corDestaque1);
     border-bottom-color: var(--corDestaque1);
 }
 
-.container>.container-ft>.moldura2 {
+.container-ALL>.container-ft>.moldura2 {
     animation: rotate 20s infinite linear reverse;
     border-right-color: var(--corDestaque2);
     border-left-color: var(--corDestaque2);
@@ -71,41 +70,60 @@ p{
     }
 }
 
-.container>.infos {
+.container-ALL>.infos {
     text-transform: uppercase;
     padding: 10px 0px;
     font-family: monospace;
     text-align: center;
 }
 
-.container>.infos>h1 {
+.container-ALL>.infos>h1 {
     font-size: 36px;
 }
 
-.container>.infos>p {
+.container-ALL>.infos>p {
     font-size: 14px;
     font-weight: bolder;
 }
 
-.container>.infos>.Descrição {
+.container-ALL>.infos>.Descrição {
     padding: 15px 0px;
     font-size: 15px;
     text-align: left;
 }
 
-.container > .projetos > nav > ul{
+.container-ALL > .projetos > .container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.container-ALL > .projetos > .container > .item{
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.container-ALL > .projetos > nav > ul{
     list-style: none;
     margin: auto;
 }
 
-.container > .projetos > nav > ul > li > img{
+.container-ALL > .projetos > nav > ul > li > img{
     display: block;
     float: left;
     width: 40px;
     padding: 5px;
 }
 
-.container > .projetos > nav > ul > li > a{
+.container-ALL > .projetos > nav > ul > li > a{
     display: block;
     margin: 5px auto;
     padding: 10px;
@@ -114,7 +132,7 @@ p{
     max-width: 800px;
 }
 
-.container > .projetos > nav > ul > li > a:hover{
+.container-ALL > .projetos > nav > ul > li > a:hover{
     background-color: var(--corDestaque3);
 }
 
