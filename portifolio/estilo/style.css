@@ -16,12 +16,12 @@
 }
 
 body {
-    background: linear-gradient(to bottom, var(--corBase), var(--corDestaque1));
+    background: linear-gradient(to bottom, var(--corBase), var(--corDestaque1), var(--corBase));
 }
 
 .container-ALL {
     margin: 50px auto;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 30px;
 }
 
@@ -80,17 +80,25 @@ p{
 
 .container-ALL>.infos>h1 {
     font-size: 36px;
+    font-weight: 800;
 }
 
 .container-ALL>.infos>p {
     font-size: 14px;
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 .container-ALL>.infos>.Descrição {
     padding: 15px 0px;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
+}
+
+.container-ALL > .projetos > h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 20px auto;
 }
 
 .container-ALL > .projetos > .container{
@@ -98,8 +106,7 @@ p{
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    width: 95%;
-    margin: 20px auto;
+    width: 100%;
     border-radius: 20px;
     gap: 20px;
     padding: 10px;
@@ -110,41 +117,62 @@ p{
 }
 
 .container-ALL > .projetos > .container > a > .item{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
     background-color: var(--corDestaque1);
+    padding: 10px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px black;
 }
 
 .container-ALL > .projetos > .container > a > .item:hover{
     background-color: var(--corBase);
+    transition: .1s;
 }
 
 .container-ALL > .projetos > .container > a > .item > img{
     display: block;
-    margin: auto;
-    width: 350px;
-    height: 280px;
+    margin: 10px auto;
+    width: 300px;
+    height: 300px;
     object-fit: contain;
 }
 
 .container-ALL > .projetos > .container > a > .item > p{
-    width: 100%;
+    max-width: 300px;
+    min-height: 100px;
     text-align: center;
     background-color: var(--corBase);
-    margin: auto;
+    margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-ALL > .projetos > .container > a > .item:hover > p{
     background-color: var(--corDestaque1);
+    transition: .1s;
 }
 
 mark {
     background-color: transparent;
     color: var(--corDestaque2);
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > p > a{
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
 }
